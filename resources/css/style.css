@@ -115,12 +115,17 @@ header .mobile {
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 43.5rem;
+  background-image: url("../images/banner-landingpage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
+  margin-left: 6.25rem;
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
@@ -166,6 +171,7 @@ header .mobile {
     align-items: center;
     justify-content: center;
     height: 28rem;
+    background-position: right;
   }
 
   #sign-up-cta {
@@ -227,9 +233,17 @@ header .mobile {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+.feature .image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .feature h2 {
+  padding-top: 2.5rem;
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
@@ -243,7 +257,7 @@ header .mobile {
   color: #4a4a4a;
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 890px) {  
   .feature h2 {
     font-size: 1.125rem;
     line-height: 1.3;
@@ -296,6 +310,18 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
+}
+
+#filters-section .images-container .image-container {
+  display: inline-block;
+  overflow: hidden;
+}
+
+#filters-section .images-container .image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 @media only screen and (max-width: 760px) {
@@ -323,7 +349,7 @@ header .mobile {
     padding: 0;
   }
 
-  #filters-section .extra {
+  #filters-section .images-container .extra {
     display: none;
   }
 }
@@ -332,6 +358,7 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
+  padding: 80px;
 }
 
 #quotes-section content {
@@ -347,8 +374,8 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
-  height: 1.875rem;
+#quotes-section .quote-citation {
+  margin-left: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
@@ -361,7 +388,7 @@ header .mobile {
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
